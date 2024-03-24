@@ -1,0 +1,41 @@
+/* seletor: nth-child() */
+li:nth-child(2) {
+    color: #f00;
+}
+
+li:nth-child(3n) {
+    color: #00f;
+}
+
+/* seletor: hover */
+li:hover {
+    background-color: #999;
+}
+
+/* seletor: focus */
+input:focus {
+    background-color: #f00;
+}
+
+/* pseudo-elementos --> ::before e ::after */
+li::before {
+    content: "(antes) ";
+}
+
+li::after {
+    content: " (depois)";
+}
+
+/* seletor --> :first-child  e :last-child */
+li:first-child {
+    color: rgb(255, 174, 0);
+}
+
+li:last-child {
+    color: rgb(255, 0, 179);
+}
+
+/* seletor --> :not() */
+li:not(:first-child) {
+    color: rgb(0, 255, 255);
+}
